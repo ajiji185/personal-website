@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<!-- Add this line in the <head> section -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <title>Azizi - Portfolio</title>
+</head>
+<body>
+    <nav>
+	<div class="menu-left">
+            <p>Mohd Azizi Bin Abdul Aziz</p>
+        </div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+			<li><a href="#download-cv">Download CV</a></li>
+        </ul>
+    </nav>
+
+<header>
+    
+        <h1><span id="typed-output"></span></h1>
+        <!-- Other content in the header -->
+    
+</header>
+
+  
+
+    <main>
+        <!-- Add this to the About Me section -->
+<section id="about" class="card">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello, my name is Azizi. I'm a 23-year-old developer with a passion for coding. Beyond programming, I indulge in producing music as a hobby, and I find joy in listening to classical melodies.</p>
+        </div>
+        <div class="about-image">
+            <!-- Replace 'path/to/your/image.jpg' with the actual path to your image -->
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-azizi.appspot.com/o/gmbar%20passport.png?alt=media&token=33e4a6e7-c37a-4a11-9ebe-d753b3268aa4" alt="Mohd Azizi Bin Abdul Aziz">
+        </div>
+    </div>
+</section>
+
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <!-- Add your projects here with brief descriptions -->
+            <div class="project">
+                <h3>E-CarRent UMS</h3>
+                <p>This project was my final year project (FYP) and this is an Application that I developed so a rental car can be done inside the UMS.</p>
+            </div>
+            <div class="project">
+                <h3>Epesegu</h3>
+                <p>Its a Mobile apps for the JABATAN PERKHIDMATAN KOMPUTER NEGERI (JPKN) that remind the pic about the incoming Date line.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Email: azizia187@gmail.com</p>
+            <p>Phone: 0146546170</p>
+            <!-- Add more contact information as needed -->
+        </section>
+			<!-- Add this section to your existing HTML -->
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+        <li>
+            <strong>FL Studio:</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 100%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Master</div>
+        </li>
+        <li>
+            <strong>Android Studio:</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+			<div class="skill-name"> Skill Level: Intermediate</div>
+            
+        </li>
+		<li>
+            <strong>firebase</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Intermediate</div>
+        </li>
+		<li>
+            <strong>Words,excell</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Intermediate</div>
+        </li>
+		<li>
+            <strong>bahasa melayu</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 100%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Master</div>
+        </li>
+		<li>
+            <strong>bahasa mandarin</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 50%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Beginner</div>
+        </li>
+		<li>
+            <strong>HTML,CSS</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Intermediate</div>
+        </li>
+		<li>
+            <strong>JAVA</strong>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+            <div class="skill-name"> Skill Level: Intermediate</div>
+        </li>
+        <!-- Add other skills with percentage bars -->
+    </ul>
+</section>
+
+
+		<section id="download-cv" class="card">
+			<h2>Download CV</h2>
+			<p>Click the button below to download my CV.</p>
+			<a href="https://firebasestorage.googleapis.com/v0/b/portfolio-azizi.appspot.com/o/resume%20updated.pdf?alt=media&token=2ab6af0f-184b-4d6e-a97a-bba7fabd938f" download class="download-button">Download CV</a>
+		</section>
+		
+		
+
+
+    </main>
+
+  <script>
+    // Initialize Typed.js
+    var options = {
+        strings: ['Portfolio Azizi'],
+        typeSpeed: 80,  // typing speed in milliseconds
+        backSpeed: 50,  // backspacing speed in milliseconds
+        loop: true     // set to true to loop the animation
+    };
+
+    var typed = new Typed('#typed-output', options);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333; /* Dark gray background color */
+    color: #f2f2f2;
+}/* Existing styles... */
+
+nav {
+    background: rgba(155, 89, 182, 0.2); /* White background with some transparency */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    transition: background 0.3s ease; /* Smooth transition for background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    color: #9b59b6; /* Change text color on hover */
+    background-color: #fff; /* Darken background color on hover */
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/* Underline effect */
+nav a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #9b59b6; /* Underline color */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav li:hover a:after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* Add margin to the main content to prevent it from being hidden behind the fixed navbar */
+main {
+    padding-top: 50px; /* Adjust this value based on your fixed navbar height */
+}
+
+
+
+
+header {
+    background: url("https://firebasestorage.googleapis.com/v0/b/portfolio-azizi.appspot.com/o/Background.gif?alt=media&token=65e09055-1eae-4e11-8887-8392e1d85e00") center/cover;
+    font-size: 19px;
+	color: #fff;
+    text-align: center;
+    padding: 15em;
+    position: relative;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: backgroundAnimation 20s infinite alternate linear; /* Add animation */
+	
+}@media only screen and (max-width: 600px) {
+    header {
+        padding: 2em; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+main {
+    padding: 2em;
+}
+
+h2 {
+    color: #f2f2f2;
+}
+
+
+
+
+.card {
+    background: rgba(155, 89, 182, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced lift effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+	
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scale increase on hover */
+    background-color: rgba(155, 89, 182, 0.4); /* Lighter background color on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Further lift effect on hover */
+}
+
+.project {
+    border: 1px solid #9b59b6;
+    padding: 1em;
+    margin: 20px 10px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+	text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slight scale increase on hover */
+    border-color: #7e43a5; /* Darker border color on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Further lift effect on hover */
+}
+
+
+
+nav a:active {
+    background-color: #444; /* Darker background color on click */
+}
+
+.card:active {
+    background: rgba(155, 89, 182, 0.4); /* Lighter background color on click for cards */
+}
+
+.project:active {
+    border-color: #7e43a5; /* Darker border color on click for project cards */
+}
+
+
+#download-cv {
+    background: rgba(155, 89, 182, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#download-cv:hover {
+    transform: scale(1.05);
+    background-color: rgba(155, 89, 182, 0.4);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9b59b6;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #8e44ad;
+}
+
+
+.skill-bar {
+    width: 100%;
+    background: #ddd; /* Gray background for the skill bar */
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.skill-name{
+	color:#5EEDBC;
+}
+
+.skill-level {
+    height: 100%;
+    background: #9b59b6; /* Purple color for the filled portion of the bar */
+}
+
+#skills li {
+    margin-bottom: 20px;
+
+}
+
+#skills li strong {
+    display: inline-block;
+    width: 150px; /* Adjust the width as needed for alignment */
+    font-weight: bold;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 60%; /* Adjust the width based on your preference */
+	 text-align: center;
+}
+
+.about-image {
+    width: 50%; /* Adjust the width based on your preference */
+    text-align: right; /* Align the image to the right */
+}
+.about-image img {
+    width: 50%; /* Make the image responsive */
+    border-radius: 10px; /* Add a border radius for a rounded corner effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+	
+}
+
+
+.menu-left {
+    padding: 10px;
+}
+
+.menu-left p {
+    margin: 0;
+    font-size: 1em; /* Adjust the font size based on your preference */
+    color: #fff;
+}
+@media only screen and (max-width: 600px) {
+    nav ul {
+        text-align: center; /* Center the menu items */
+    }
+
+    nav li {
+        display: block; /* Stack menu items vertically */
+        margin-bottom: 10px; /* Add some spacing between menu items */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 15px; /* Adjust margin for smaller screens */
+		text-align: right;
+    }
+}
